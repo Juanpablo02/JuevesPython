@@ -2,11 +2,14 @@ import math
 
 def reto1():
     contador = 0
+    suma = 0
     while contador >= 0:
         numero = int(input("Digite un numero positivo, si este es negativo cancelará el programa: "))
-        contador = numero
-    else: 
-        print(f'Se digito un numero negativo {numero}, el programa de cerró')
+        if numero >= 0:
+            suma = numero + suma
+        else:
+            contador = numero
+    print(f'Se digito un numero negativo la suma es {suma}, el programa de cerró')
     
 #reto1()
 
@@ -108,7 +111,7 @@ def reto2():
         elif selector == 0:
             print("")
             print("**** Escogiste salir del programa, muchas gracias por visitarnos ****")
-            contador = 0
+            break
         else:
             print("Porfavor digita un número valido")
 
@@ -126,5 +129,17 @@ def reto3():
         if numero >= 200:
             contador = 0
             
-reto3()
+#reto3()
 
+def reto4():
+    contador = 0
+    contadorNegativo = 0
+    while contador < 20:
+        numero = int(input("Digite un numero ya sea negativo o positivo: "))
+        if numero < 0:
+            contadorNegativo += 1
+        contador += 1
+    
+    print(f'Fueron ingresados {contadorNegativo} numeros negativos')
+
+#reto4()
