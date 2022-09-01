@@ -36,4 +36,4 @@ def meterNumeros():
         resultado = "No se encontro ningun numero igual"
         
     print(resultado)
-meterNumeros()
+'''meterNumeros()'''
